@@ -50,16 +50,22 @@ template NOT() {
 component main = Multiplier2();
 
 3. Fill in the network in hardhat.config.ts file.
+   networks:{
+    mumbai: {
+      url: `https://rpc.ankr.com/polygon_mumbai`,
+      accounts: [process.env.MUMBAIPRIVATEKEY]
+    }
+  },
 
-4. Make required env file.
+5. Make required env file.
 
-5. Run in following commands:
+6. Run in following commands:
    npx hardhat circom
    npx hardhat compile
    npx hardhat run scripts/deploy.ts --network mumbai
 
-6. Connect mumbai testnet to metamask.
-7. The deployed ID pasted in polygonscan verifies all the transactions.
+7. Connect mumbai testnet to metamask.
+8. Check all the transaction in polgonscan by pasting in the deployed ID.
 
 ## AUTHOR
 ### SHUBHAM
