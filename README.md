@@ -6,7 +6,7 @@ This project implements a logical gate circuit using the circom programming lang
 ## GETTING STARTED
 ### INSTALLING
 1. clone the repository: https://github.com/gmchad/zardkat
-2. Open on VS code.
+2. Open in VS code.
 
 ### Executing program
 1. Run npm i command.
